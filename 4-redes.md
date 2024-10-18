@@ -50,10 +50,14 @@ docker network ls
 
 # COLOCAR UNA CAPTURA DE LAS REDES EXISTENTES CREADAS
 
+![alt text](image-14.png)
+
 # COLOCAR UNA(S) CAPTURAS(S) DE LOS CONTENEDORES CREADOS EN DONDE SE EVIDENCIE A QUÉ RED ESTÁN VINCULADOS
 
+![alt text](image-15.png)
+![alt text](image-16.png)
 ### Para eliminar las redes creadas
 ```
 docker network rm <nombre de la red>
 ```
-
+![alt text](image-17.png)

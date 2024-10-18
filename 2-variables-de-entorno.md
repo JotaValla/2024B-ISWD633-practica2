@@ -4,27 +4,31 @@
 
 ### Para crear un contenedor con variables de entorno?
 
+Las variables de entorno son pares clave-valor que se utilizan para configurar el entorno en el que se ejecuta una aplicación. Estas variables permiten personalizar el comportamiento de los programas sin necesidad de cambiar el código. En Docker, las variables de entorno se utilizan para pasar parámetros de configuración a los contenedores.
+
 ```
 docker run -d --name <nombre contenedor> -e <nombre variable1>=<valor1> -e <nombre variable2>=<valor2>
 ```
 
 ### Crear un contenedor a partir de la imagen de nginx:alpine con las siguientes variables de entorno: username y role. Para la variable de entorno rol asignar el valor admin.
 
-# COMPLETAR
-
-# CAPTURA CON LA COMPROBACIÓN DE LA CREACIÓN DE LAS VARIABLES DE ENTORNO DEL CONTENEDOR ANTERIOR
+![alt text](image-5.png)
 
 ### Crear un contenedor con mysql:8 , mapear todos los puertos
-# COMPLETAR
+
+![alt text](image-6.png)
 
 ### ¿El contenedor se está ejecutando?
-# COMPLETAR
+NO
+![alt text](image-7.png)
 
 ### Identificar el problema
-# COMPLETAR
+
+Debido a que no especificamos las variables de inicio
 
 ### Eliminar el contenedor creado con mysql:8 
-# COMPLETAR
+
+![alt text](image-8.png)
 
 ### Para crear un contenedor con variables de entorno especificadas
 - Portabilidad: Las aplicaciones se vuelven más portátiles y pueden ser desplegadas en diferentes entornos (desarrollo, pruebas, producción) simplemente cambiando el archivo de variables de entorno.
@@ -41,9 +45,10 @@ docker run -d --name <nombre contenedor> --env-file=<nombreArchivo>.<extensión>
 Es necesario especificar la ruta absoluta del archivo si este se encuentra en una ubicación diferente a la que estás ejecutando el comando docker run.
 
 ### Crear un contenedor con mysql:8 , mapear todos los puertos y configurar las variables de entorno mediante un archivo
-# COMPLETAR
 
-# CAPTURA CON LA COMPROBACIÓN DE LA CREACIÓN DE LAS VARIABLES DE ENTORNO DEL CONTENEDOR ANTERIOR 
+
+![alt text](image-9.png)
 
 ### ¿Qué bases de datos existen en el contenedor creado?
-# COMPLETAR
+
+![alt text](image-10.png)
